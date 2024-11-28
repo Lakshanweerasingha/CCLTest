@@ -1,0 +1,87 @@
+.user-stats {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    transition: box-shadow 0.3s ease; 
+  }
+  
+  .user-stats:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .stats-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .stats-info {
+    margin-bottom: 20px;
+  }
+  
+  .stats-info p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .stats-info strong {
+    color: #007bff; 
+  }
+  
+  .location-stats {
+    margin-top: 20px;
+  }
+  
+  .location-stats h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .location-stats ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .location-item {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .location-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .location-item span {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  @media (max-width: 768px) {
+    .user-stats {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .stats-title {
+      font-size: 1.6rem;
+    }
+  
+    .stats-info p {
+      font-size: 1rem;
+    }
+  
+    .location-stats h3 {
+      font-size: 1.1rem;
+    }
+  }
+  
