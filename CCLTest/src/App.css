@@ -1,8 +1,27 @@
+/* Apply global reset to ensure no margin or padding issues */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure that html and body take up full height */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  height: 100vh; /* Ensure #root takes full viewport height */
+  width: 100vw;  /* Ensure #root takes full viewport width */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the dashboard */
+  align-items: center;
 }
 
 .logo {
