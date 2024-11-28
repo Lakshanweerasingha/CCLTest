@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './UserStats.css'; 
 
 const UserStats = () => {
   const [userData, setUserData] = useState([]);
@@ -11,10 +12,8 @@ const UserStats = () => {
       const response = await axios.get('https://jsonplaceholder.typicode.com/users');
       setUserData(response.data);
 
-      // Count active users (for simplicity, assuming all users are active)
       setActiveUsers(response.data.length);
 
-      // Group users by location
       const locationCount = response.data.reduce((acc, user) => {
         const city = user.address.city;
         acc[city] = (acc[city] || 0) + 1;
